@@ -1,0 +1,38 @@
+{
+  // "extends": "tsconfig/tsconfig.nest.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "paths": {
+      "@helpers/*": [
+        "helpers/*"
+      ],
+      "@auth/*": [
+        "modules/auth/*"
+      ],
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@decorators/*": [
+        "decorators/*"
+      ],
+      "@testUtils/*": [
+        "testUtils/*"
+      ],
+      "@root/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
